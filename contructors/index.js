@@ -1,12 +1,10 @@
 
-function createCircle(radius) {
-    return {
-        radius,
-        draw: function() {
-            console.log(radius)
-        }
-    }
+function CreateCircle(radius) {
+    this.radius = radius;
+    this.draw = function() {
+        console.log(radius)
+    };
 }
 
-const circle =  createCircle(6);
-circle.draw()
+const circle = new CreateCircle(6);
+circle.draw();
